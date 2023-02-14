@@ -16,15 +16,12 @@
       max-width: 100%;
     }
   </style>
-  <script>
-
-  </script>
 
   <div class="heading">
     <img src="assets/niknjo.jpg" style="max-width: 100%;">
 
     <i>всё равно полосатик-казутора лучший<br>мальчик для тебя и твоего сокровища. <3</i>
-    <h2 style="font-size: medium;">Будешь моей валентинкой, Niknjo? :3</h2>
+    <c id="name"><h2 style="font-size: medium;">Будешь моей валентинкой, Niknjo? :3</h2></c>
     <div class="poem">
       Среди бурь, среди слёз,<br>
       Среди горячечных грёз.<br>
@@ -40,7 +37,36 @@
       Не отравись ты вновь, гнусным тем ядом.<br>
       Твоё счастье - моя главная забота;<br>
       Не позволь заглохнуть ей, не достигнув и пол-оборота.
+    </div><br>
+    <div>
+      <i>Пожалуйста, не забудь эти строчки. .</i><br><br>
+      I remember you couldn't stop crying<br>
+      You found me when I thought I was dying<br>
+      ..<br>
+      All the crazy shit I made you do<br>
+      The long nights you held me through<br>
+      ..<br>
+      Yeah, I tried<br>
+      To get it off my mind<br>
+      To leave it all behind<br>
+      Don't wanna make it worse<br>
+      I'm gonna make it work<br>
+      ..<br>
+      I rеmember you stayed up all night<br>
+      To make sure I was alright<br>
+      Believe me when I say<br>
+      I would have done the same<br>
     </div>
   </div>
+  <script>
+    const name = document.getElementById("name");
+    const colors = ["red", "orange", "yellow", "lime", "green", "cyan", "blue", "violet", "purple"];
+    let i = 0;
+    setInterval(() => {
+      name.style.color = colors[i];
+      if (i == 8) i = 0;
+      i++
+    }, 250);
+  </script>
 </body>
 </html>

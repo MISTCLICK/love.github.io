@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentine's day</title>
+  <title>i <3 u ljolja.</title>
 </head>
 <body>
   <style>
@@ -15,15 +15,12 @@
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
   </style>
-  <script>
-
-  </script>
 
   <div class="heading">
     <img src="assets/ljolja.jpg" style="max-width: 100%;">
     <i>а на этом байке он тебя трахнет. <3</i>
-    <h1 style="font-size: x-large;">Happy Valentine's day!</h1>
-    <h2 style="margin-top: -1vh; font-size: medium;">Будешь моей валентинкой, Лёлечка? :3</h2>
+    <c id="name"><h1 style="font-size: x-large;">Happy Valentine's day!</h1>
+    <h2 style="margin-top: -1vh; font-size: medium;">Будешь моей валентинкой, Лёлечка? :3</h2></c>
     <div class="poem">
       Страх на страхе,<br>
       Повод на поводе.<br>
@@ -44,7 +41,39 @@
       Не стыдись, что за помощью обратилась.<br>
       Спасибо, что ты рядом,<br>
       И спасибо, что никогда не осудила меня взглядом.
+    </div><br>
+    <div>
+      <i>Пожалуйста, не забудь эти строчки. .</i><br><br>
+      I remember you couldn't stop crying<br>
+      You found me when I thought I was dying<br>
+      ..<br>
+      All the crazy shit I made you do<br>
+      The long nights you held me through<br>
+      ..<br>
+      Yeah, I tried<br>
+      To get it off my mind<br>
+      To leave it all behind<br>
+      Don't wanna make it worse<br>
+      I'm gonna make it work<br>
+      ..<br>
+      I rеmember you stayed up all night<br>
+      To make sure I was alright<br>
+      Believe me when I say<br>
+      I would have done the same<br>
+    </div>
+    <div>
+      <img src="assets/niknjo.jpg" style="max-width: 100%;">
     </div>
   </div>
+  <script>
+    const name = document.getElementById("name");
+    const colors = ["red", "orange", "yellow", "lime", "green", "cyan", "blue", "violet", "purple"];
+    let i = 0;
+    setInterval(() => {
+      name.style.color = colors[i];
+      if (i == 8) i = 0;
+      i++
+    }, 250);
+  </script>
 </body>
 </html>
